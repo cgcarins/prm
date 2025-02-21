@@ -1,0 +1,75 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    background-color: #28a745;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.stars {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.star {
+    color: gray;
+    transition: 0.3s;
+}
+
+.star:hover,
+.star.active {
+    color: gold;
+}
+.text-center{
+	
+margin-bottom:	15px;	
+}
+
+.banner {
+    background-image: url('img/arinsbanner.png'); /* Imagem padrão (desktop) */
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+}
+
+/* Exibir uma imagem diferente no mobile */
+@media (max-width: 768px) {
+    .banner {
+        background-image: url('img/arinsbanner-mobile.png'); /* Imagem para mobile */
+        height: 150px; /* Altura menor para se ajustar melhor no mobile */
+    }
+}
+
+ /* Ajusta a altura do Select2 para combinar com os outros selects */
+    .select2-container .select2-selection--single {
+        height: calc(2.25rem + 2px) !important; /* Mesmo tamanho dos selects padrão do Bootstrap */
+        padding: 0.375rem 0.75rem !important;
+        border: 1px solid #ced4da !important;
+        border-radius: 0.375rem !important;
+    }
+
+    /* Ajusta a seta do Select2 para ficar igual ao Bootstrap */
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+        display: none !important; /* Oculta a seta do Select2 */
+    }
+
+    /* Reaplica a seta padrão do Bootstrap */
+    #pmResponsavel + .select2-container .select2-selection {
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/> </svg>');
+        background-repeat: no-repeat;
+        background-position: right 0.75rem center;
+        background-size: 1rem;
+    }
